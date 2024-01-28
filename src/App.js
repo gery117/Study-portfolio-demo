@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import SubjectCard from "./SubjectCard";
+
+const StudySubjectslist = [
+  {
+    id: 0,
+    name: "Mandarin",
+    rating: null,
+    category: "Language"
+  },
+
+  {
+    id: 0,
+    name: "Coding",
+    rating: null,
+    category: "IT"
+  },
+
+  {
+    id: 0,
+    name: "PHD Thesis",
+    rating: null,
+    category: "University"
+  },
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>My Study Subjects</h1>
+      {StudySubjectslist.map(sub => <SubjectCard subject = {sub}/>)}
     </div>
   );
 }
