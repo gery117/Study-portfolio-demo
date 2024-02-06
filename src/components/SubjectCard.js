@@ -1,4 +1,4 @@
-function SubjectCard(props){
+ function SubjectCard(props){
     return(
         <div className ="bg-light border p-4 m-2">
             <h4>{props.subject.name}</h4>
